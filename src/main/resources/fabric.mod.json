@@ -3,8 +3,8 @@
   "id": "combat_utility_mod",
   "version": "${version}",
   "name": "Combat Utility Mod",
-  "description": "Fixes and improvements for aim-locking and combat assistance.",
-  "authors": ["R41NY CODES"],
+  "description": "Fixed build for 1.21.11 with Mojang Mappings.",
+  "authors": ["R41NY"],
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
@@ -19,7 +19,7 @@
     }
   ],
   "depends": {
-    "fabricloader": ">=0.19.3",
+    "fabricloader": ">=0.16.10",
     "minecraft": "~1.21.11",
     "java": ">=21",
     "fabric-api": "*"

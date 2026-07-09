@@ -1,5 +1,6 @@
 package com.r41ny.combatmod.client.logic;
 
+import com.r41ny.combatmod.client.mixin.InventoryAccessor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.entity.player.Player;
@@ -61,8 +62,11 @@ public class AimLogic {
                 }
             }
 
-            if (axeSlot != -1 && player.getInventory().selected != axeSlot) {
-                player.getInventory().selected = axeSlot;
+            if (axeSlot != -1) {
+                InventoryAccessor inv = (InventoryAccessor) player.getInventory();
+                if (inv.getSelected() != axeSlot) {
+                    inv.setSelected(axeSlot);
+                }
             }
         }
     }

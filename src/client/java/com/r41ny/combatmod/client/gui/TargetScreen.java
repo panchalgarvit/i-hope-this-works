@@ -23,11 +23,11 @@ public class TargetScreen extends Screen {
         int centerX = this.width / 2 - buttonWidth / 2;
 
         for (PlayerInfo info : players) {
-            if (this.minecraft.player != null && info.getProfile().getId().equals(this.minecraft.player.getUUID())) continue;
+            if (this.minecraft.player != null && info.getProfile().id().equals(this.minecraft.player.getUUID())) continue;
             
-            String name = info.getProfile().getName();
+            String name = info.getProfile().name();
             this.addRenderableWidget(Button.builder(Component.literal(name), button -> {
-                AimLogic.setTarget(info.getProfile().getId());
+                AimLogic.setTarget(info.getProfile().id());
                 this.onClose();
             }).bounds(centerX, yOffset, buttonWidth, 20).build());
             
