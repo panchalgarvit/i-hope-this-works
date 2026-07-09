@@ -3,7 +3,7 @@
   "id": "combat_utility_mod",
   "version": "${version}",
   "name": "Combat Utility Mod",
-  "description": "Fixed build for 1.21.11 with Mojang Mappings.",
+  "description": "Fixed 1.21.11 build with Inventory Accessors and KeyMapping corrections.",
   "authors": ["R41NY"],
   "license": "MIT",
   "environment": "*",

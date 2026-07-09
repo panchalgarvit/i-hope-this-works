@@ -63,6 +63,7 @@ public class AimLogic {
             }
 
             if (axeSlot != -1) {
+                // Using Interface Injection and Mixin Accessor to bypass private 'selected' field
                 InventoryAccessor inv = (InventoryAccessor) player.getInventory();
                 if (inv.getSelected() != axeSlot) {
                     inv.setSelected(axeSlot);
