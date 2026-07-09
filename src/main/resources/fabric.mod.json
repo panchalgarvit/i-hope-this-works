@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "combat_utility_mod",
+  "version": "${version}",
+  "name": "Combat Utility Mod",
+  "description": "Fixes and improvements for aim-locking and combat assistance.",
+  "authors": ["R41NY CODES"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.r41ny.combatmod.CombatMod"],
+    "client": ["com.r41ny.combatmod.client.CombatModClient"]
+  },
+  "mixins": [
+    "combat_utility_mod.mixins.json",
+    {
+      "config": "combat_utility_mod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

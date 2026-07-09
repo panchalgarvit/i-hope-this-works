@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.r41ny.combatmod.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "LocalPlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
