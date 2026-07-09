@@ -23,7 +23,7 @@ public class TargetScreen extends Screen {
         int centerX = this.width / 2 - buttonWidth / 2;
 
         for (PlayerInfo info : players) {
-            // Using record-style accessors id() and name() for Mojang Mappings 1.21.x
+            //Record accessors for GameProfile in Mojang 1.21.x
             if (this.minecraft.player != null && info.getProfile().id().equals(this.minecraft.player.getUUID())) continue;
             
             String name = info.getProfile().name();

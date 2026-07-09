@@ -3,7 +3,7 @@
   "id": "combat_utility_mod",
   "version": "${version}",
   "name": "Combat Utility Mod",
-  "description": "Fixed 1.21.11 build with Inventory Accessors and KeyMapping corrections.",
+  "description": "Unrestricted combat assistant for 1.21.11.",
   "authors": ["R41NY"],
   "license": "MIT",
   "environment": "*",
